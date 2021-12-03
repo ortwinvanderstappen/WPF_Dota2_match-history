@@ -1,0 +1,25 @@
+﻿<Window x:Class="Dota2_MatchHistory.MainWindow"
+        
+        xmlns:vm="clr-namespace:Dota2_MatchHistory.ViewModel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dota2_MatchHistory"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000"  MinHeight="550" MinWidth="1000">
+
+    <!--Data context linking to the viewmodel-->
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <!--Current window frame-->
+        <Frame NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"/>
+
+        <!--Next page button-->
+        <Button VerticalAlignment="Bottom"
+		        Command="{Binding SwitchPageCommand}" Content="{Binding CommandText}"/>
+    </Grid>
+</Window>
