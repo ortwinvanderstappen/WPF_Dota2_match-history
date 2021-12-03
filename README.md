@@ -17,8 +17,12 @@ Every game you play in Dota 2 is called a match.
 
 The first screen will show an overview of public matches. The public match history will be shown in a list type view. Clicking on a match shows the second screen.
 
+![Screen 1](https://github.com/ortwinvanderstappen/dota2_match-history/blob/main/Git_Images/Screen1.PNG?raw=true)
+
 ### Screen 2
 
 This screen shows more details about the chosen match.
 
 Switching between local and online repository can be done in the application itself.
+
+![Screen 2](https://github.com/ortwinvanderstappen/dota2_match-history/blob/main/Git_Images/Screen2.PNG?raw=true)
